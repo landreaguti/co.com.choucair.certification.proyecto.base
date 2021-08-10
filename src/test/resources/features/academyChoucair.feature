@@ -9,7 +9,14 @@
 
     Scenario: Search for a automation course
       Given than Laura wants to learn automation at the academy Choucair
-      When she search for the course Recursos Automatización Bancolombia on the choucair academy platform
-      Then she finds the course called resources Recursos Automatización Bancolombia
+      | strUser  | strPassword |
+      | TuUusario| TuClave     |
+      When she search for the course  on the choucair academy platform
+      | strCourse              |
+      | Metodología Bancolombia|
+      Then she finds the course called
+      | StrCourse              |
+      | Metodología Bancolombia|
+
 
 
